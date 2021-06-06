@@ -1,0 +1,133 @@
+.section-4 {
+    height: 90vh;
+}
+
+.about-wrapper {
+    display: flex;
+    height: 80vh;
+}
+
+.about-col-left {
+    flex: 1;
+    background-color: var(--bgc-color2);
+    padding: 4.2vw;
+    position: relative;
+}
+
+.square-about {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--bgc-color3);
+    top: 10%;
+    left: 10%;
+    transform: translate(10, -50%);
+    opacity: .9;
+    animation: square-animation 1.4s both;
+}
+
+.about-header {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: var(--color2);
+    font-size: 4vw;
+}
+
+.about-col-right {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 101, 101);
+    align-items: center;
+    position: relative;
+}
+
+.circle-about {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 50%;
+    width: 10vw;
+    height: 10vw;
+    background: #00000094;
+    transform: translate(-50%, 50%);
+}
+
+.about-right-top {
+    flex: 1;
+    padding: 4.2vw;
+    background-color: #aea3a3;
+}
+
+.about-text {
+    max-width: 30vw;
+    font-size: 1vw;
+}
+
+.about-right-bottom {
+    width: 100%;
+    height: 50%;
+    background: #94673ab6;
+    padding: 4.2vw;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+
+    .section-4 {
+        height: 80vh;
+    }
+
+    .about-wrapper {
+       display: block;
+    }
+
+    .about-col-left {
+        flex: 0;
+        height: 50vh;
+    }
+
+    .about-header {
+       padding: 40px;
+       font-size: 30px;
+    }
+
+    .square-about {
+        width: 80px;
+        height: 80px;
+        left: 15%;
+    }
+
+    .about-col-right {
+        height: 100vh;
+    }
+
+    .about-right-top {
+        padding: 50px;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        font-size: 12px;
+        height: 100%;
+    }
+
+    .about-right-bottom {
+       position: relative;
+    }
+    
+    .circle-about {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        background: #00000094;
+        transform: translate(-50%, 40%);
+    }
+}
